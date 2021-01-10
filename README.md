@@ -1,2 +1,2 @@
-# arimunandar.github.io
+# samuelpasaribu.github.io
 My Personal Page
