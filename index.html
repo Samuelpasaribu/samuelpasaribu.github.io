@@ -6,6 +6,17 @@
 
 <head>
     <style>
+    .btn {
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.info {background-color: #00bfa5;} /* Green */
+.info:hover {background: #00A08B;}
+    }
     #BtnTop {
         position: fixed;
         float: right;
@@ -73,6 +84,27 @@
     <!--[if lt IE 10]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->   
+    
+    <!-- STYLE SWITCH START -->
+    <link id="switch_style" href="#" rel="stylesheet" type="text/css">
+    
+    <div class="style-switch left" id="switch-style">
+        <a id="toggle-switcher" class="switch-button" title="Change Styles">
+           <font color="green"><i class="fa fa-whatsapp"></i></font>
+        </a>
+
+        <div class="switched-options">
+            <div class="config-title">WhatsApp</div>
+
+            <ul class="list-unstyled styles">
+                <li><img src="assets/images/whatsapp.png" alt="profile picture" class="img-responsive"></li>
+                <li class="icon-File-button"><a href="https://bit.ly/2NOIFtY" class="icon-File-button"><button class="btn info">Kirim Pesan</button></a></li>
+            </ul>
+        </div>
+        <!-- //.switched-options -->
+    </div>
+    <!-- //STYLE SWITCH END -->
+
     <a name="top"></a>
     <style type="text/css">
     
