@@ -4,7 +4,7 @@ web-based portfolio
 
 ## Display
 
-- [curriculum vitae](https://tinyurl.com/yetvavre).
+- [view image](https://tinyurl.com/yetvavre).
 
 ## Demo
 - [CV - Samuel Pasaribu](https://samuelpasaribu.github.io).
