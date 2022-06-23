@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Slick Banner</title>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Our CSS -->
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: #dedede;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 15px;
+            background-color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .slider .slick-slide {
+            border: solid 1px #000;
+        }
+
+        .slider .slick-slide img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Slick Slider</h1>
+        <p>
+            Hello. Look at beautiful laptops below!
+        </p>
+<div class="slider">
+            <div>
+                <a href="#">
+                    <img alt="Image 1" src="https://raw.githubusercontent.com/Tikseo/DesainLogo/main/img/Slide1.JPG" />
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img alt="Image 2" src="https://raw.githubusercontent.com/Tikseo/DesainLogo/main/img/Slide2.JPG" />
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img alt="Image 3" src="https://raw.githubusercontent.com/Tikseo/DesainLogo/main/img/Slide3.JPG" />
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img alt="Image 4" src="https://raw.githubusercontent.com/Tikseo/DesainLogo/main/img/Slide4.JPG" />
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img alt="Image 5" src="https://raw.githubusercontent.com/Tikseo/DesainLogo/main/img/Slide5.JPG" />
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img alt="Image 6" src="https://raw.githubusercontent.com/Tikseo/DesainLogo/main/img/Slide6.JPG" />
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img alt="Image 7" src="https://raw.githubusercontent.com/Tikseo/DesainLogo/main/img/Slide7.JPG" />
+                </a>            
+            </div>
+        </div>
+  </div>
+        
+
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Slick JS -->    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Our Script -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 2500,
+            dots: true
+            });
+        });
+    </script>
+
+</body>
+</html>
