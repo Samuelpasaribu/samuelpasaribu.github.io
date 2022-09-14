@@ -6,6 +6,8 @@ Search tasks
 Delete tasks
 Do not delete tasks by refreshing the page
 
+Lihat <a href="https://samuelpasaribu.github.io/todo list">Demo</a>
+
 # Artikel
 Lihat Postingan <a href="https://www.samuelpasaribu.com/2022/09/membuat-to-do-list-dengan-javascript.html">Website untuk Membuat To Do List</a>
 
