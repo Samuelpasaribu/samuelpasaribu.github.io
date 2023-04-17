@@ -1,13 +1,15 @@
-# Panduan Membuat Tabel Responsif dengan Tombol Navigasi Menggunakan JavaScript
-Cara membuat tampilan halaman web HTML dan CSS yang mencakup tabel sederhana yang terdiri dari empat kolom dan satu baris sebagai header, dan satu baris sebagai isi tabel. Ada juga tombol navigasi "Prev" dan "Next" di bawah tabel.
+# Cara Membuat Aplikasi To Do List dengan HTML, CSS, dan JavaScript
+Membuat Simple Todo List Dengan Html Css Javascript - Daftar Todo JavaScript membantu Anda membuat daftar hal-hal yang ingin Anda lakukan sepanjang hari. Misalkan Anda ingin melakukan sesuatu sepanjang hari yang dapat Anda daftarkan di sini. Setiap kali Anda menyelesaikan tugas itu maka Anda dapat menghapusnya.
 
 # Options
-Tabel adalah salah satu elemen HTML yang paling umum digunakan untuk menampilkan data secara terstruktur.
+Search tasks
+Delete tasks
+Do not delete tasks by refreshing the page
 
-Lihat <a href="https://samuelpasaribu.github.io/tabel/">Demo</a>
+Lihat <a href="https://samuelpasaribu.github.io/todo%20list/">Demo</a>
 
 # Artikel
-Lihat Postingan <a href="https://www.samuelpasaribu.com/2023/04/cara-membuat-tabel-dinamis-dengan-tombol-navigasi-menggunakan-javascript.html">Cara Membuat Tabel Dinamis dengan Tombol Navigasi Menggunakan JavaScript</a>
+Lihat Postingan <a href="https://www.samuelpasaribu.com/2022/09/membuat-to-do-list-dengan-javascript.html">Cara Membuat Aplikasi To Do List dengan HTML, CSS, dan JavaScript</a>
 
 # Sumber
 Website : <a href="https://www.samuelpasaribu.com">samuelpasaribu.com</a>
