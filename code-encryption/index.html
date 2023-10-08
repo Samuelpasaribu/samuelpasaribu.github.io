@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Encryption</title>
+    <!-- Link CSS Prism.js -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism.min.css" rel="stylesheet">
+    <!-- Script Prism.js -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.min.js"></script>
+    <!-- Script Clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <!-- Script SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <style>
+        /* Gaya tambahan */
+        .code-container {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 0; /* Posisi paling atas */
+        }
+    
+        .code-header {
+            background-color: rgba(52,53,65);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    
+        .copy-button, .copied-button {
+            background-color: rgba(52,53,65);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        .copy-button {
+            margin-left: 10px;
+        }
+    
+        /* Gaya notifikasi */
+        #copy-notification {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: none;
+        }
+      
+      /* CSS to hide the Terjemahan link */
+      .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+        display: none !important;
+      }
+    
+      /* CSS untuk mengatasi masalah kontras rendah */
+      .skiptranslate.goog-te-gadget {
+        background-color: #ffffff; /* Warna latar belakang sesuaikan dengan desain situs Anda */
+        color: #000000; /* Warna teks sesuaikan dengan desain situs Anda */
+      }
+    
+      .dark .skiptranslate.goog-te-gadget {
+        background-color: #2f2f2f;
+        color: #ffffff;
+      }
+      
+      pre[class*=language-] {
+        padding: 1em;
+        margin: .5em 0;
+        overflow: auto;
+      }
+    </style>
+</head>
+<body>
+    <div class="code-header">
+    <!-- Tombol "Copy code" -->
+    <div class="copy-button" data-clipboard-target=".code-container">Copy code</div>
+    <div class="copied-button" style="display: none;">Copied!</div>
+    </div>
+    <pre class="code-container language-javascript">
+    <code>
+    // Contoh kode pemrograman JavaScript
+    function helloWorld() {
+    console.log("Hello, World!");
+    }
+    </code>
+    </pre>
+    <script>
+        // Inisialisasi Prism.js
+        document.addEventListener("DOMContentLoaded", function() {
+        Prism.highlightAll();
+        });
+        // Inisialisasi Clipboard.js
+        var clipboard = new ClipboardJS('.copy-button', {
+        text: function(trigger) {
+        // Mendapatkan kode yang ada di dalam .code-container
+        var codeContainer = document.querySelector(trigger.getAttribute('data-clipboard-target'));
+        var codeText = getCodeText(codeContainer);
+        return codeText;
+        }
+        });
+        clipboard.on('success', function(e) {
+        showCopySuccessNotification(e.trigger);
+        });
+        clipboard.on('error', function(e) {
+        showCopyErrorNotification();
+        });
+        // Fungsi untuk mendapatkan teks kode dari elemen .code-container
+        function getCodeText(codeContainer) {
+        var codeElement = codeContainer.querySelector('.language-javascript');
+        var codeLines = codeElement.innerText.split('\n');
+        var cleanedCodeLines = [];
+        for (var i = 0; i < codeLines.length; i++) {
+        var line = codeLines[i].trim();
+        if (line) {
+        cleanedCodeLines.push(line);
+        }
+        }
+        return cleanedCodeLines.join('\n');
+        }
+        // Fungsi untuk menampilkan notifikasi pop-up ketika kode berhasil disalin
+        function showCopySuccessNotification(button) {
+        var copiedButton = document.querySelector('.copied-button');
+        copiedButton.style.display = 'inline-block';
+        button.style.display = 'none';
+        setTimeout(function() {
+        copiedButton.style.display = 'none';
+        button.style.display = 'inline-block';
+        }, 2000);
+        }
+        // Fungsi untuk menampilkan notifikasi pop-up ketika ada kesalahan dalam menyalin kode
+        function showCopyErrorNotification() {
+        Swal.fire({
+        icon: 'error',
+        title: 'Gagal Menyalin Kode',
+        text: 'Terjadi kesalahan saat menyalin kode.',
+        });
+        }
+    </script>
+</body>
+</html>
