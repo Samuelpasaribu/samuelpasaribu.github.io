@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/samuelpasaribu/alkitabai/sitemap/robots.css">
+<div id="container">
+  <div id="bot" class="neutral">
+    <div id="head">
+      <div id="left-ear">
+        <div id="left-ear-inner"></div>
+      </div>
+      <div id="face">
+        <div id="eyes">
+          <div id="left-eye"></div>
+          <div id="right-eye"></div>
+        </div>
+        <div id="mouth"></div>
+      </div>
+      <div id="right-ear">
+        <div id="right-ear-inner"></div>
+      </div>
+    </div>
+  </div>
+  <div id="switches">
+    <span onmouseover="setStatus('')" class="samuelpasaribu"> Neutral </span>
+    <span onmouseover="setStatus('speaking')" class="samuelpasaribu"> Speaking </span> 
+    <span onmouseover="setStatus('thinking')" class="samuelpasaribu"> Thinking </span>  
+    <span onmouseover="setStatus('listening')" class="samuelpasaribu"> Listening </span>  
+    <span onmouseover="setStatus('computing')" class="samuelpasaribu"> Computing </span>  
+  </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script>
+function setStatus(newstatus)
+{
+  $("#bot").removeClass("speaking thinking listening computing");
+  $("#bot").addClass(newstatus);
+}  
+</script>
